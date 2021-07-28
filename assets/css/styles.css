@@ -18,6 +18,7 @@ nav{
 
 .nav-wrapper a{
 	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
 	font-weight: 600;
 	color:#3D3A33
 }
@@ -91,19 +92,46 @@ img{
 	background-color: #3D3A33;
 }
 
+
+
+.shape-1{
+	margin-right: 20px;
+	margin-top: 5rem;
+	height: 5px;
+	width: 10px;
+	background-color: #3D3A33;
+	
+}
+
 .shape-2{
+	margin-right: 20px;
+	margin-top: 5rem;
+	height: 5px;
+	width: 20px;
+	background-color: #3D3A33;
+}
+
+.shape-3{
+	margin-right: 20px;
+	margin-top: 5rem;
 	height: 5px;
 	width: 50px;
 	background-color: #3D3A33;
-	display: flex;
-	align-items: flex-end;
+}
+
+.shape-4{
+	margin-right: 50px;
+	margin-top: 5rem;
+	height: 5px;
+	width: 200px;
+	background-color: #3D3A33;
 }
 
 .about{
 	margin-bottom: 100px;
 	padding-left: 20px;
 	width: 95%;
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 .about h4{
@@ -226,12 +254,11 @@ img{
 }
 
 .project-content p{
-	text-transform: uppercase;
+	text-transform: none;
 	font-family: 'Noto Sans TC', sans-serif;
 	font-weight: 400;
 	font-size: clamp(1rem, 3vw + 1rem, 1.3rem);
 	color:#3D3A33;
-	text-shadow: 0.04em 0.05em 0.03em #938F83;
 }
 
 .project-content .footer p{
