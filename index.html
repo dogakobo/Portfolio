@@ -4,11 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Antonio Quevedo - Portafolio</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
 	<!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="https://kit.fontawesome.com/c979716d9f.js" crossorigin="anonymous"></script>
 
 </head>
 <body class="w-100 h-100" style="">
@@ -17,31 +21,32 @@
 		<div class="nav-shape">
 			
 		</div>
-	    <div class="nav-wrapper container">
+	    <div class="nav-wrapper container-sm">
 	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	      	<li><a href="sass.html">About</a></li>
-	        <li><a href="sass.html">Works</a></li>
+	      	<li><a href="#about">About</a></li>
+	        <li><a href="#projects">Works</a></li>
 	        <li><a href="badges.html">Frameworks / Languages</a></li>
 	        <li><a href="collapsible.html">Contact</a></li>
 	      </ul>
 	    </div>
   	</nav>
 
-	<div class="presentation">
+	<div class="presentation container-sm">
 
 		<div class="row">
-			<div class="col-lg-2">
-				<div class="img-div z-depth-2">
+			<div class="d-flex align-items-center justify-content-center col-lg-3">
+				<div  class="img-div z-depth-2">
 					<img src="assets/img/profile.jpg" alt="" class="h-100 w-100">
 				</div>
 			</div>
 
-			<div class="position-relative col-lg-10">
-				<div class="presentation-shape-1 ">
-				</div>
-				<p class="myname">Hi, my name is Antonio Quevedo</p>
+			<div class="text d-flex align-items-center position-relative col-lg-9">
+				<div  class="">
+					<p  class="salute">Hi, my name is </p>
+					<p class="myname">Antonio Quevedo</p>
 
-				<p class="mysub">Welcome to my portfolio, here you can learn everything about me, my history along my way through the development world, the works i've made, the tecnologies i use, including my conctact information. So feel free to visit my full site.</p>
+					<p class="mysub">I'm a Web Software Developer</p>
+				</div>
 			</div>
 
 		</div>
@@ -57,11 +62,11 @@
 		</div>
 		
 
-		<div class="about">
-			<div class="about-title">
-				<div class="about-shape d-inline">
+		<div class="about" id="about">
+			<div class="d-flex align-items-center about-title">
+				<div class="about-shape">
 				</div>
-				<h4 class="d-inline">About me</h4>
+				<h4 class="">About me</h4>
 			</div>
 
 			<p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Odio magni nesciunt vel modi adipisci expedita aspernatur aperiam eaque. Eligendi laborum architecto cupiditate facere nobis iure. Harum odio eveniet blanditiis quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magnam mollitia expedita culpa? Quo eius rem architecto nulla maxime sint, voluptatum, beatae, voluptates dicta officia accusamus. Reiciendis sapiente quae mollitia.</p>
@@ -70,36 +75,69 @@
 
 	</div>
 
-	<div class="projects">
+	<div class="projects" id="projects">
 
-		<div class="project-title">
-			<div class="project-name-shape d-inline">
+		<div class="container-sm">
+			<div class="d-flex align-items-center project-title">
+				<div class="project-name-shape">
+				</div>
+				<p>Works</p>
 			</div>
-			<p class="p-title d-inline">Works</p>
 		</div>
 
-		<div class="project-left">
-			
-			<div class="project-img z-depth-3">
-				<div class="bg-color2 position-relative">
-				</div>
-			</div>
-			
-			
-			<div class="project-content">
-				<h4 class="">Pathys's Esthetic Web site</h4>
-				<div class="text z-depth-3">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatem, doloremque quis provident in consectetur veritatis iure laudantium fugiat aliquid, voluptate? Quia doloribus alias, explicabo ea sit at totam voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					</p>
-				</div>
-				<div class="footer pt-2">
-					<p class="d-inline">STACK MEAN</p>
-					<p class="d-inline">Chart.JS</p>
-					<p class="d-inline">API REST</p>
-					<p class="d-inline">Bootstrap</p>
-				</div>
-			</div>
+		<div class="project-left container-sm">
+			<div class="row">
+
+			    <div class="col-sm-5">
+			    	
+			    	<div class="project-content">
+						<h4 class="">Pathys's Esthetic Web site</h4>
+						<div class="text z-depth-3">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatem, doloremque quis provident in consectetur veritatis iure laudantium fugiat aliquid, voluptate? Quia doloribus alias, explicabo ea sit at totam voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+						</div>
+						<div class="d-flex flex-row footer pt-2">
+							<p>STACK MEAN</p>
+							<p>Chart.JS</p>
+							<p>API REST</p>
+							<p>Bootstrap</p>
+						</div>
+						<i type="button" class="github-icon fab fa-github-square"></i>
+						
+					</div>
+
+			    </div>
+
+			    <div class="col-sm-7" style="padding:0">
+			    	
+			    	<div class="project-img img-fluid z-depth-3">
+						<div class="bg-color2 position-relative">
+						</div>	
+					</div>					
+			    </div>
+			  </div>
+		</div>
+
+		<div align="center" class="project-movil movil container-sm">
+			    <div style="padding:0">
+			    	
+			    	<div class="project-img-movil img-fluid z-depth-3">
+						<div align="left" class="bg-color2-movil p-4 position-relative">
+							<h4 class="">Pathys's Esthetic Web site</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatem, doloremque quis provident in consectetur veritatis iure laudantium fugiat aliquid, voluptate? Quia doloribus alias, explicabo ea sit at totam voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+							<div class="footer pt-2">
+								<p style="text-transform: uppercase;">Stack MEAN - Chart.JS - API REST - Bootstrap
+								</p>
+							</div>	
+							<i type="button" class="github-icon-movil fab fa-github-square"></i>		
+						</div>	
+					</div>		
+					
+					
+			    </div>
 		</div>
 
 		<div class="btn-div mt-5">
