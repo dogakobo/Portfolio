@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins:wght@400;500;600&family=Roboto+Mono:wght@400;700;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Source+Code+Pro:wght@500&display=swap');
+/*@font-face {
+ font-family: 'icomoon';
+ src: url('fonts/icomoon.eot?5kiojs');
+ src: url('fonts/icomoon.eot?5kiojs#iefix') format('embedded-opentype'),
+ url('fonts/icomoon.ttf?5kiojs') format('truetype'),
+ url('fonts/icomoon.woff?5kiojs') format('woff'),
+ url('fonts/icomoon.svg?5kiojs#icomoon') format('svg');
+ font-weight: normal;
+ font-style: normal;
+ }*/
 
 :root {
 	--main-color: #3D3A33;
@@ -49,6 +59,7 @@ nav{
 }
 
 .presentation{
+	padding: 0 3% 0 3%;
 	padding-top: 3%;
 }
 
@@ -70,37 +81,35 @@ img{
 	object-fit: cover;
 }
 
-.presentation .myname{
-	width: 100%;
+.presentation .text{
 	padding-left: 40px;
-	font-family: 'Source Code Pro', monospace;
-	font-size: 5rem;
-	letter-spacing: -4px;
-	line-height:100px;
+}
+
+.presentation .myname{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: clamp(40px, 5vw, 80px);
 	color:#3D3A33;
-  	position: relative;
+	margin: 0;
   	text-shadow: 0.04em 0.05em 0.03em #938F83;
+
 }
 
 .presentation .salute{
-	width: 100%;
-	padding-left: 40px;
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 500;
-	font-size: clamp(1rem, 3vw + 1rem, 1.3rem);
+	font-size: clamp(14px ,3vw, 20px);
 	color:var(--comp-color);
-  	text-transform: uppercase;
-  	position: relative;
   	text-shadow: 0.04em 0.05em 0.03em #938F83;
   	margin-bottom: -0.5rem;
+  	margin: 0;
 }
 
 .presentation .mysub{
-	width: 100%;
-	padding-left: 40px;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 300;
-	font-size: clamp(1rem, 3vw + 1rem, 2rem);
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+	font-size: clamp(20px, 2vw, 40px);
 	color:#3D3A33;
 	text-shadow: 0.04em 0.05em 0.03em #938F83;
 }
@@ -159,27 +168,27 @@ img{
 }
 
 .about-title{
-	margin: 0px 0px 16px;
-	height: 50px;
+	margin: 0px 0px 0px;
+	height: 40px;
 }
 
 .about h4{
-	padding-left: 30px;
 	margin: 0;
-	text-transform: uppercase;
+	padding-left: 20px;
 	font-family: 'Noto Sans TC', sans-serif;
 	font-weight: 400;
-	font-size: clamp(1rem, 3vw + 1rem, 2.3rem);
-	color:var(--main-color);
+	font-size: clamp(26px,5vw,32px);
+	color: var(--main-color);
 	text-shadow: 0.04em 0.05em 0.03em #938F83;
 }
 
 .about p{	
 	width: 100%;
-	margin-top: 40px;
+	margin-top: 20px;
+
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
-	font-size: clamp(1rem, 3vw + 1rem, 1.5rem);
+	font-size: clamp(17px, 3vw, 20px);
 	color: var(--main-color);
 	text-shadow: 0.04em 0.05em 0.03em #938F83;
 }
@@ -193,25 +202,24 @@ img{
 
 .projects{
 	box-shadow: 0px 0px 1rem 0.5px black;
-	padding-top: 3%;
+	padding: 3rem 0 3rem 0;
 	background-image: url("../img/projects-bg.png");
 	width: 100%;
-	height: 1000px;
 	min-height: 100%;
 }
 
 .project-title{
-	height: 50px;
-	margin-bottom: 7rem;
+	padding: 0 3% 0 3%;
+	height: 40px;
+	margin-bottom: 5rem;
 }
 
 .projects p{
 	margin: 0;
-	padding-left: 30px;
-	text-transform: uppercase;
+	padding-left: 20px;
 	font-family: 'Noto Sans TC', sans-serif;
 	font-weight: 400;
-	font-size: clamp(1rem, 3vw + 1rem, 2.3rem);
+	font-size: clamp(26px,5vw,32px);
 	color: var(--sec-color);
 	text-shadow: 0.04em 0.05em 0.05em rgba(163, 157, 134, 0.4);
 }
@@ -224,11 +232,11 @@ img{
 }
 
 .project-left{
+	padding: 0 3% 0 3%;
 	position: relative;
 }
 
 .project-left h4{
-	text-transform: uppercase;
 	font-family: 'Noto Sans TC', sans-serif;
 	font-weight: 400;
 	font-size: clamp(1rem, 3vw + 1rem, 1.8rem);
@@ -251,7 +259,7 @@ img{
 	opacity: 0.4;
 	z-index: 2;
 	width: 100%;
-	height: 100%;
+	height:100%;
 	transition: 0.3s;
 }
 
@@ -260,9 +268,18 @@ img{
 	opacity: 0;
 }
 
+.project-img:hover .bg-color2{ 
+	background-color: red;
+	opacity: 0;
+}
+
 .project-content{
-	max-width: 600px;
-	padding-top: 70px;
+	padding: 0 3% 0 3%;
+	margin-left: 20px;
+	margin-right: 20px;
+	left: 0px;
+	max-width: 700px;
+	margin-top: 70px;
 	z-index: 3;
 	position: absolute;
 }
@@ -284,7 +301,7 @@ img{
 
 .project-content .footer{
 	margin-top: 5px;
-	margin-left: -30px;
+	margin-left: -20px;
 }
 
 
@@ -306,7 +323,7 @@ img{
 }
 
 .github-icon:hover{
-	color: var(--comp-color);
+	color: #9D9880;
 }
 
 .movil{
@@ -336,13 +353,213 @@ img{
 	
 }
 
-button:hover{
+/*button:hover{
 	transform: scale(1.08, 1.08); 
+}*/
+
+.skills{
+	padding-top: 3rem;
+	width: 100%;
+	min-height: 100%;
+	padding-bottom: 6rem;
 }
 
+.skills-title{
+	margin: 0px 0px 0px;
+	height: 40px;
+}
+
+.skills-name-shape{
+	height: 100%;
+	width: 10px;
+	background-color: var(--main-color);
+	box-shadow: 2px 2px 2px 0.05em #938F83;
+}
+
+.skills p{
+	margin: 0;
+	padding-left: 20px;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 400;
+	font-size: clamp(26px,5vw,32px);
+	color: var(--main-color);
+	text-shadow: 0.04em 0.05em 0.03em #938F83;
+}
+
+.skills h4{
+	padding-left: 20px;
+	margin: 0;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 400;
+	font-size: clamp(26px,5vw,32px);
+	color: var(--main-color);
+	text-shadow: 0.04em 0.05em 0.03em #938F83;
+}
+
+.skills i{
+	padding: 2rem;
+	font-size: clamp(70px, 9vw, 120px);
+	color: var(--main-color);
+	text-shadow: 0.02em 0.03em 0.03em #938F83;
+}
+
+.skills span{
+	font-size: clamp(70px, 9vw, 120px);
+	color: var(--main-color);
+	text-shadow: 0.02em 0.03em 0.03em #938F83;
+}
+
+.contact{
+	position: relative;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	width: 100%;
+	min-height: 100%;
+}
+
+.contact-shape{
+	right: 800px;
+	bottom: -700px;
+	position: absolute;
+	background-image: url("../img/projects-bg.png");
+	transform: rotate(225deg);
+	height: 100%;
+	width: 100%;
+}
+
+.contact-shape-2{
+	right: -800px;
+	bottom: 700px;
+	position: absolute;
+	background-image: url("../img/projects-bg.png");
+	transform: rotate(45deg);
+	height: 100%;
+	width: 100%;
+}
+
+.contact-title{
+	margin: 0px 0px 0px;
+	height: 40px;
+}
+
+.contact-name-shape{
+	height: 100%;
+	width: 10px;
+	background-color: var(--main-color);
+	box-shadow: 2px 2px 2px 0.05em #938F83;
+}
+
+.contact p{
+	margin: 0;
+	padding-left: 20px;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 400;
+	font-size: clamp(26px,5vw,32px);
+	color: var(--main-color);
+	text-shadow: 0.04em 0.05em 0.03em #938F83;
+}
+
+.contact-content{
+	padding-top: 10rem;
+}
+
+.contact-content h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 800;
+	font-size: clamp(40px, 4.5vw, 70px);
+	color:#3D3A33;
+	margin: 0;
+  	text-shadow: 0.04em 0.05em 0.03em #938F83;
+}
+
+.contact-content p{
+	width: 80%;
+	margin-top: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: clamp(17px,3vw,20px);
+	color: var(--main-color);
+	text-shadow: 0.04em 0.05em 0.03em #938F83;
+}
+
+.contact-content button{
+	margin-top: 3rem;
+	border: none;
+	border-radius: 5px;
+	border: 3px solid var(--main-color);
+	height: 60px;
+	width: 150px;
+	align-items: center;
+	background-color: transparent;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+	font-size: clamp(1rem, 3vw + 1rem, 1.4rem);
+	color: var(--main-color);
+	text-shadow: 0.04em 0.05em 0.05em rgba(163, 157, 134, 0.4);
+	transition: scale(1);
+	transition: 0.3s;
+}
+
+.contact-content .footer{
+	margin-top: 8rem;
+}
+
+.contact-content .footer p{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: var(--main-color);
+	text-shadow: 0.04em 0.05em 0.03em #938F83;
+}
+
+.contact-content button:hover{
+	background-color: red;
+	background-color: rgba(61, 58, 51, 0.1);
+}
 
 @media all and (max-width: 992px){
 	.presentation .col-lg-9{
 		margin-top: 2rem;
+	}
+}
+
+
+@media all and (max-width: 991px){
+	.project-content .footer p{
+		color: var(--main-color);
+	}
+
+	.project-left h4{
+		color: var(--main-color);
+		text-shadow: 0.04em 0.05em 0.03em #938F83;
+	}
+
+	.github-icon{
+		color: var(--main-color);
+	}
+
+	.github-icon:hover{
+		color: #9D9880;
+	}
+	.bg-color2{
+		opacity: 0.6;
+	}
+}
+
+@media all and (max-width: 560px){
+	.project-content .footer p{
+		color: var(--sec-color);
+	}
+
+	.github-icon{
+		color: var(--sec-color);
+	}
+
+	.project-content{
+		margin-top: 200px;
+	}
+
+	.project-title{
+		margin-bottom: 2rem;
 	}
 }
