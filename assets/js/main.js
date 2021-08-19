@@ -11,7 +11,6 @@ $(document).ready(function(){
 		usePopupCaption: false,
 		usePopupEasyClose: false,
 		usePopupNav: true,
-		windowMargin: 150,	
 		popupCloserTextColor: ' #3D3A33',	
 		popupCloserTextSize: '30px',
    });
