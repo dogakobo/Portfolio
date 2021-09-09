@@ -244,11 +244,29 @@ img{
 	text-shadow: 0.04em 0.05em 0.05em rgba(163, 157, 134, 0.4);
 }
 
-.project-img{
+.project-right h4{
+	text-align: right;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 400;
+	font-size: clamp(1rem, 3vw + 1rem, 1.8rem);
+	color: var(--sec-color);
+	text-shadow: 0.04em 0.05em 0.05em rgba(163, 157, 134, 0.4);
+}
+
+.project-left .project-img{
 	z-index: 0;
 	height: 400px;
 	width: 800px;
 	background-image: url("../img/project-1-1.PNG");
+	background-size: cover;
+	background-position: top;
+}
+
+.project-right .project-img{
+	z-index: 0;
+	height: 400px;
+	width: 800px;
+	background-image: url("../img/project-2-1.png");
 	background-size: cover;
 	background-position: top;
 }
@@ -273,7 +291,21 @@ img{
 	opacity: 0;
 }
 
-.project-content{
+.project-right .project-content{
+	
+	padding: 0 3% 0 3%;
+	margin-left: 20px;
+	margin-right: 20px;
+	left: 0px;
+	max-width: 700px;
+	margin-top: 70px;
+	z-index: 3;
+	position: absolute;
+	left: 40%;
+   	top: 0;
+}
+
+.project-left .project-content{
 	padding: 0 3% 0 3%;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -284,8 +316,16 @@ img{
 	position: absolute;
 }
 
-.project-content .text{
+.project-left .project-content .text{
 	border-right: 5px solid #3D3A33;
+	padding: 1rem 1rem 1rem 0rem;
+	background-color: var(--sec-color);
+	width: 100%;
+}
+
+.project-right .project-content .text{
+	text-align: right;
+	border-left: 5px solid #3D3A33;
 	padding: 1rem 1rem 1rem 0rem;
 	background-color: var(--sec-color);
 	width: 100%;
@@ -304,6 +344,10 @@ img{
 	margin-left: -20px;
 }
 
+
+.project-right .project-content .footer p{
+	text-align: right;
+}
 
 .project-content .footer p{
 	color: var(--sec-color);
