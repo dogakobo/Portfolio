@@ -657,19 +657,26 @@ img {
 }
 
 .skills i {
-    margin: 2rem;
     font-size: clamp(45px, 9vw, 120px);
     color: var(--main-color);
     text-shadow: 0.02em 0.03em 0.03em #938F83;
 }
 
-.skills span {
-    padding-left: 0;
-    padding-right: 2rem;
+
+.skills svg{
+    height: clamp(45px, 9vw, 120px);
     font-size: clamp(45px, 9vw, 120px);
-    color: var(--main-color);
-    text-shadow: 0.02em 0.03em 0.03em #938F83;
+
 }
+
+.skills svg{
+    filter: drop-shadow( 0.02em 0.03em 0.03em #938F83);
+}
+
+.skills svg path{
+    fill: var(--main-color);
+}
+
 
 .contact {
     position: relative;
