@@ -395,7 +395,7 @@ img {
 
 .github-icon {
     color: var(--sec-color);
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 10px;
     position: 0px;
     transition: 0.2s;
