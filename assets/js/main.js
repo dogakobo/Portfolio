@@ -1,4 +1,16 @@
+
+
 $(document).ready(function() {
+
+    const searchingForJob = false;
+
+    if(searchingForJob){
+        document.getElementById('searchingJob').innerText="I'm currently looking for new opportunities, my inbox is always open. Whether you have a question, I'll try my best to get back to you!";
+        
+    }else{
+        document.getElementById('searchingJob').innerText="I'm not looking for job now but my inbox is always open. If you have a question, I'll try my best to get back to you! ;)";
+    }
+        
 
     $('#two').poptrox({
         popupCloserBackgroundColor: '#BBB59B',

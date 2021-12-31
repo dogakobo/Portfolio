@@ -821,6 +821,10 @@ img {
     display: none;
 }
 
+.job-text{
+    max-width: 800px;
+}
+
 @media (max-width: 1400px) {
     .project-right .project-content {
         left: 30rem;
