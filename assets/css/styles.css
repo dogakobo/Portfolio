@@ -278,7 +278,7 @@ img {
 .project-left h4 {
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
-    font-size: clamp(24px, 5vw, 28px);
+    font-size: clamp(23px, 5vw, 28px);
     color: var(--sec-color);
     text-shadow: 0.04em 0.05em 0.05em rgba(163, 157, 134, 0.4);
 }
@@ -287,7 +287,7 @@ img {
     text-align: right;
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: 400;
-    font-size: clamp(24px, 5vw, 28px);
+    font-size: clamp(23px, 5vw, 28px);
     color: var(--sec-color);
     text-shadow: 0.04em 0.05em 0.05em rgba(163, 157, 134, 0.4);
 }
@@ -301,6 +301,10 @@ img {
     background-position: top;
 }
 
+.col-lg-7{
+    padding: 0;
+}
+
 .project-right .project-img {
     z-index: 0;
     height: 400px;
@@ -308,6 +312,18 @@ img {
     background-image: url("../img/project-2-1.png");
     background-size: cover;
     background-position: top;
+}
+
+.photosText{
+    color:  var(--sec-color);
+    display: none;
+    font-size: 20px;
+    padding-top: 2px;
+    text-shadow: 0.04em 0.05em 0.05em rgba(163, 157, 134, 0.4);
+}
+
+.photosText:hover{
+    color: #9D9880;
 }
 
 .bg-color2 {
@@ -873,6 +889,7 @@ img {
         text-shadow: 0.04em 0.05em 0.03em #938F83;
     }
     .project-right h4 {
+        text-align: left;
         color: var(--main-color);
         text-shadow: 0.04em 0.05em 0.03em #938F83;
     }
@@ -881,7 +898,7 @@ img {
         text-shadow: 0.04em 0.05em 0.03em #938F83;
     }
     .github-icon:hover {
-        color: #9D9880;
+        color: #555349;
     }
     .bg-color2 {
         opacity: 0.7;
@@ -891,8 +908,24 @@ img {
         margin-left: 20px;
         margin-right: 20px;
         left: 0px;
-        margin-top: 40px;
+        margin-top: 20px;
         z-index: 3;
         position: absolute;
+    }
+    .project-left .project-content {
+        padding: 0 3% 0 3%;
+        margin-left: 20px;
+        margin-right: 20px;
+        left: 0px;
+        margin-top: 20px;
+        z-index: 3;
+        position: absolute;
+    }
+    .project-img:hover .bg-color2 {
+        background-color: var(--sec-color);
+        opacity: 0.7;
+    }
+    .photosText{
+        display: block;
     }
 }
