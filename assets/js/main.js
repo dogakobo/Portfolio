@@ -157,7 +157,7 @@ const projectsList = [
         github: 'https://github.com/dogakobo/estetica_website',
         link: '',
         images: ['./assets/img/project-1-1.PNG', './assets/img/project-1-2.PNG', './assets/img/project-1-3.PNG', './assets/img/project-1-4.PNG', './assets/img/project-1-5.PNG', './assets/img/project-1-6.PNG', './assets/img/project-1-7.PNG', './assets/img/project-1-8.PNG', ],
-        cover: './assets/img/project-1-1.png'
+        cover: './assets/img/project-1-1.PNG'
     },
     {
         id: "2",
