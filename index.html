@@ -1,27 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <title>Antonio Quevedo - Portfolio</title>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
 
     <script src="https://kit.fontawesome.com/c979716d9f.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/765f646c9a/UntitledProject/style.css">
 
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body class="w-100 h-100">
+    <div class="image-viewer">
+        <div class="images-carousel place-content-center grid">
+            <div class="images-content flex">
+                <!-- <img src="./assets/img/project-2-1.png" class="">
+                <img src="./assets/img/project-2-1.png" alt=""> -->
+            </div>
+        </div>
+        <span id="backward-icon" >
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z"/></svg>
+        </span>
+        <span id="forward-icon">
+            <svg  xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z"/></svg>
+        </span>
+    </div>
 
     <ul id="slide-out" class="sidenav">
         <li class="h-100 d-flex align-items-center">
@@ -63,14 +81,19 @@
                 <i class="fas fa-bars"></i>
             </a>
         </div>
-
-        <div class="nav-wrapper container-sm">
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#frameworks">Languages / Frameworks</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="nabvar-menu container-sm">
+            <div>
+                <a href="#about">About</a>
+            </div>
+            <div>
+                <a href="#projects">Projects</a>
+            </div>
+            <div>                
+                <a href="#frameworks">Languages / Frameworks</a>
+            </div>
+            <div>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
     </nav>
     <div class="side-bar-display">
@@ -124,14 +147,19 @@
         <div class="row">
             <div class="d-flex align-items-center justify-content-center col-lg-3">
                 <div class="img-div z-depth-2">
-                    <img src="assets/img/profile.jpg" class="rounded mx-auto d-block">
+                    <img src="assets/img/profile_4.jpg" class="rounded mx-auto d-block">
                 </div>
             </div>
 
             <div class="text d-flex align-items-center position-relative col-lg-9">
                 <div class="">
                     <p class="salute">Hi, my name is</p>
-                    <h1 class="myname">Antonio Quevedo.</h1>
+                    <h1 class="myname">Antonio 
+                        <span>
+                            Quevedo
+                        </span>
+                        .
+                    </h1>
 
                     <p class="mysub">I'm a Web Developer.</p>
                 </div>
@@ -177,119 +205,6 @@
                 <p>Projects</p>
             </div>
         </div>
-
-        <div class="project-left pb-5 container-sm position-relative">
-            <div class="row">
-
-                <div class="col-lg-5">
-
-                    <div class="project-content">
-                        <h4 class="">Pathys's Esthetic Web Site</h4>
-                        <div class="text z-depth-3">
-                            <p>
-                                An esthetic website. This has a catalog with search options and shopping cart with PayPal. On the side of the administrator, we have a dashboard with sales, users and last orders graphics. In addition to its respective product inventory system.</p>
-                        </div>
-                        <div class="d-flex flex-row footer pt-2">
-                            <p>STACK MEAN</p>
-                            <p>Chart.JS</p>
-                            <p>REST API</p>
-                            <p>Bootstrap</p>
-                        </div>
-
-                        <a class="me-2" style="text-decoration: none;" href="https://pathyssthetic.herokuapp.com/" target="_blank">
-                            <i class="github-icon fas fa-external-link-alt" style="font-size: 26px;"></i>
-                        </a>
-
-                        <a href="https://github.com/dogakobo/estetica_website" target="_blank">
-                             <i class="github-icon fab fa-github-square"></i>
-                        </a>
-                        
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-7" style="padding:0" id="two">
-
-                    <a href="assets/img/project-1-1.PNG">
-
-                        <div class="project-img img-fluid z-depth-3">
-                            <div class="bg-color2 position-relative"></div>
-                        </div>
-                        <span class="right photosText">See images</span>
-                    </a>
-
-                    <a href="assets/img/project-1-2.PNG"></a>
-
-                    <a href="assets/img/project-1-3.PNG"></a>
-
-                    <a href="assets/img/project-1-4.PNG"></a>
-
-                    <a href="assets/img/project-1-5.PNG"></a>
-
-                    <a href="assets/img/project-1-6.PNG"></a>
-
-                    <a href="assets/img/project-1-7.PNG"></a>
-
-                    <a href="assets/img/project-1-8.PNG"></a>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="project-right mt-5 container-sm position-relative">
-            <div class="row">
-
-                <div class="col-lg-7" id="one">
-
-                    <a href="assets/img/project-2-1.png">
-
-                        <div class="project-img img-fluid z-depth-3">
-                            <div class="bg-color2 position-relative"></div>
-                        </div>
-                        <span class="left photosText">See images</span>
-                    </a>
-
-                    <a href="assets/img/project-2-2.png"></a>
-
-                    <a href="assets/img/project-2-3.png"></a>
-
-                </div>
-
-                <div class="col-lg-5">
-
-                    <div class="project-content">
-                        <h4 class="">Fortnite Api Consume (In developing)</h4>
-                        <div class="text z-depth-3">
-                            <p>
-                                An esthetic website. This has a catalog with search options and shopping cart with PayPal. On the side of the administrator, we have a dashboard with sales, users and last orders graphics. In addition to its respective product inventory system.
-                            </p>
-                        </div>
-                        <div class="d-flex flex-row-reverse footer pt-2">
-                            <p>STACK MERN</p>
-                            <p>Redux</p>
-                            <p>API Consume</p>
-                            <p>Tailwind CSS</p>
-                        </div>
-                        <div align="right">
-                            <a href="https://fortnite-items.herokuapp.com/" target="_blank">
-                                <i class="github-icon fas fa-external-link-alt"  style="font-size: 27px;"></i>
-                            </a>
-                        </div>
-                        
-
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="btn-div mt-4 container-sm">
-
-
-        </div>
-
     </div>
 
     <div class="skills" id="frameworks">
@@ -327,7 +242,6 @@
 
                 <div class="col-4">
                     <span class="iconify" data-icon="logos:nodejs" style="height: clamp(50px, 9vw, 100px)">></span>
-
                 </div>
             </div>
             <div align="center" class="row" style="padding-top: 4rem">
@@ -341,23 +255,41 @@
                 </div>
 
                 <div class="col-4">
-                    <span class="iconify" data-icon="logos:redux"></span>
-                    
+                    <img src = "assets/icons/postgresql-icon.svg" style="width: clamp(60px, 13vw, 110px)"/>
                 </div>
             </div>
 
-            <div align="center" class="row"  style="padding-top: 3rem">
+            <div align="center" class="row"  style="padding-top: 4rem">
                 <div class="col-4">
-                    <span class="iconify" data-icon="logos:express" style="width: clamp(80px, 13vw, 180px)"></span>
+                    <span class="iconify" data-icon="logos:express" style="width: clamp(60px, 13vw, 180px)"></span>
                 </div>
 
                 <div class="col-4">
                     <span class="iconify" data-icon="logos:tailwindcss" style="width: clamp(100px, 16vw, 400px);"></span>
-
+                </div>
+                <div class="col-4">
+                    <img src = "assets/icons/typescript-icon.svg" style="width: clamp(60px, 13vw, 110px)"/>
                 </div>
             </div>
-
-
+            <div align="center" class="row"  style="padding-top: 5rem">
+                <div class="col-4" >
+                    <img src = "assets/icons/nextjs-icon.svg" style="width: clamp(60px, 13vw, 110px)"/>
+                </div>
+                <div class="col-4">
+                    <img src = "assets/icons/storybook-icon.svg" style="width: clamp(60px, 13vw, 110px)"/>
+                </div>
+                <div class="col-4">
+                    <img src = "assets/icons/docker-icon.svg" style="width: clamp(60px, 13vw, 110px)"/>
+                </div>
+            </div>
+            <div align="center" class="row"  style="padding-top: 5rem">
+                <div class="col-4">
+                    <img src = "assets/icons/vuejs-icon.svg" style="width: clamp(60px, 13vw, 110px)"/>
+                </div>
+                <div class="col-4">
+                    <img src = "assets/icons/github-icon.svg" style="width: clamp(60px, 13vw, 110px)"/>
+                </div>
+            </div>
         </div>
     </div>
 
