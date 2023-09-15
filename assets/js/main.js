@@ -103,14 +103,13 @@ class Project {
         imageViewer.addEventListener('click', async (event) => {
             const projectId = imageViewer.id
             if (event.target === imageViewer) {
-                project.exit()
+                this.exit()
                 setTimeout(async () => {
                     await document.startViewTransition(() => {
-                        imageViewer.style.display = 'none'
-                        imageViewer.querySelector('img').style.viewTransitionName = ``
+                        
                         document.querySelector(`#project-${projectId}`).style.viewTransitionName = `image-${projectId}`
                     });
-                }, project.countCurrentImage !== 0 ? 0 : 200)
+                }, this.countCurrentImage === 0 ? 0 : 400)
                 
                 setTimeout(() => {
                     document.querySelector(`#project-${projectId}`).style.viewTransitionName = ``
@@ -142,6 +141,10 @@ class Project {
     }
 
     exit() {
+        imageViewer.style.display = 'none'
+        imageViewer.querySelector('img').style.viewTransitionName = ``
+        this.backwardIcon.style.visibility = 'hidden'
+        this.forwardIcon.style.visibility = 'visible'
         this.countCurrentImage = 0
         this.imagesContent.style.transform = `translateX(0px)`
         this.translateX = 0
@@ -153,7 +156,7 @@ const projectsList = [
         id: "1",
         title: "Pathys's Esthetic Web Site",
         description: 'An esthetic website. This has a catalog with search options and shopping cart with PayPal. On the side of the administrator, we have a dashboard with sales, users and last orders graphics. In addition to its respective product inventory system.',
-        technologies: ['Angular', 'MongoDB', 'ExpressJS', 'BOOTSTRAP'],
+        technologies: ['Angular', 'MongoDB', 'ExpressJS', 'Material UI'],
         github: 'https://github.com/dogakobo/estetica_website',
         link: '',
         images: ['./assets/img/project-1-1.PNG', './assets/img/project-1-2.PNG', './assets/img/project-1-3.PNG', './assets/img/project-1-4.PNG', './assets/img/project-1-5.PNG', './assets/img/project-1-6.PNG', './assets/img/project-1-7.PNG', './assets/img/project-1-8.PNG', ],
@@ -163,17 +166,26 @@ const projectsList = [
         id: "2",
         title: "Fortnite Api Consume",
         description: 'An esthetic website. This has a catalog with search options and shopping cart with PayPal. On the side of the administrator, we have a dashboard with sales, users and last orders graphics. In addition to its respective product inventory system.',
-        technologies: ['React', 'MongoDB', 'ExpressJS', 'Tailwind Css', 'Api consume'],
+        technologies: ['React', 'MongoDB', 'ExpressJS', 'Tailwind CSS', 'Api consume'],
         github: '',
         images: ['./assets/img/project-2-1.png', './assets/img/project-2-2.png', './assets/img/project-2-3.png'],
         link: 'https://fortnite-items.onrender.com/',
         cover: './assets/img/project-2-1.png'
+    },
+    {
+        id: "3",
+        title: "Vue Photos App",
+        description: 'An esthetic website. This has a catalog with search options and shopping cart with PayPal. On the side of the administrator, we have a dashboard with sales, users and last orders graphics. In addition to its respective product inventory system.',
+        technologies: ['VueJS', 'Tailwind CSS', 'Api consume'],
+        github: 'https://github.com/dogakobo/vuejs-photos-app.git',
+        images: ['./assets/img/project-3-1.png', './assets/img/project-3-2.png'],
+        link: 'https://vue-photos-app.onrender.com/',
+        cover: './assets/img/project-3-1.png'
     }
 ]
 
 const projects = document.querySelector('#projects')
 const imageViewer = document.querySelector('.image-viewer')
-let project
 
 /* imageViewer.addEventListener('click', async (event) => {
     const projectId = imageViewer.id
@@ -202,7 +214,7 @@ function SetAllImages (projectId) {
 
 async function viewImage (projectId) {
     await SetAllImages(projectId)
-    project = new Project()
+    new Project()
     const selectedProject = projectsList.filter(project => project.id == projectId)[0]
     const imageElement = imageViewer.querySelector('img')
     imageElement.setAttribute('src', selectedProject.cover)
