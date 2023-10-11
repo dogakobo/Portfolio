@@ -165,7 +165,7 @@ const projectsList = [
     {
         id: "2",
         title: "Fortnite Api Consume",
-        description: 'An esthetic website. This has a catalog with search options and shopping cart with PayPal. On the side of the administrator, we have a dashboard with sales, users and last orders graphics. In addition to its respective product inventory system.',
+        description: 'This site compiles a large Fortnite database with information, items, users, season information, etc. Check out all the new Fortnite features every day. You can also create an account and add the items you have and then share your profile with your friends',
         technologies: ['React', 'MongoDB', 'ExpressJS', 'Tailwind CSS', 'Api consume'],
         github: '',
         images: ['./assets/img/project-2-1.png', './assets/img/project-2-2.png', './assets/img/project-2-3.png'],
