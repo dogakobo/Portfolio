@@ -175,7 +175,7 @@ const projectsList = [
     {
         id: "3",
         title: "Vue Photos App",
-        description: 'An esthetic website. This has a catalog with search options and shopping cart with PayPal. On the side of the administrator, we have a dashboard with sales, users and last orders graphics. In addition to its respective product inventory system.',
+        description: 'A simple image web application where you can browse and view many amazing images including high definition images that you can use as wallpaper.',
         technologies: ['VueJS', 'Tailwind CSS', 'Api consume'],
         github: 'https://github.com/dogakobo/vuejs-photos-app.git',
         images: ['./assets/img/project-3-1.png', './assets/img/project-3-2.png'],
