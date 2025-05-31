@@ -82,10 +82,14 @@ class Project {
         /* this.images = images ?? {} */
         this.countCurrentImage = 0
         this.backwardIcon = document.querySelector('#backward-icon')
+        this.backwardIcon.style.visibility = 'visible'
         this.forwardIcon = document.querySelector('#forward-icon')
+        this.forwardIcon.style.visibility = 'visible'
         this.imagesContent = document.querySelector('.images-content')
         this.imagesCarousel = document.querySelector('.images-carousel')
         this.allImages = this.imagesContent.querySelectorAll('img')
+        this.maxPages = this.allImages.length - 2
+        console.log(this.maxPages)
         this.translateX = 0
         document.addEventListener('keydown', (event) => {
             console.log(event)
@@ -121,23 +125,25 @@ class Project {
     forward() {
         this.translateX = this.allImages[this.countCurrentImage + 1].offsetLeft
         this.imagesContent.style.transform = `translateX(-${this.translateX}px)`
-        if (this.allImages.length - 2 == Number(this.countCurrentImage)) {
-            this.forwardIcon.style.visibility = 'hidden'
-        } else {
-            this.backwardIcon.style.visibility = 'visible'
-        }
+        // if (this.maxPages === Number(this.countCurrentImage)) {
+        //     this.forwardIcon.style.visibility = 'hidden'
+        // } else {
+        //     this.backwardIcon.style.visibility = 'visible'
+        // }
         this.countCurrentImage ++
+        console.log(this.countCurrentImage);
     }
 
     backward() {
         this.translateX = this.allImages[this.countCurrentImage - 1].offsetLeft
         this.imagesContent.style.transform = `translateX(-${this.translateX}px)`
-        if (this.countCurrentImage == 1) {
-            this.backwardIcon.style.visibility = 'hidden'
-        } else {
-            this.forwardIcon.style.visibility = 'visible'
-        }
+        // if (this.countCurrentImage === 1) {
+        //     this.backwardIcon.style.visibility = 'hidden'
+        // } else {
+        //     this.forwardIcon.style.visibility = 'visible'
+        // }
         this.countCurrentImage --
+        console.log(this.countCurrentImage);
     }
 
     exit() {
@@ -148,6 +154,7 @@ class Project {
         this.countCurrentImage = 0
         this.imagesContent.style.transform = `translateX(0px)`
         this.translateX = 0
+        this.imagesContent.innerHTML = ''
     }
 }
 
@@ -208,8 +215,17 @@ const imageViewer = document.querySelector('.image-viewer')
 function SetAllImages (projectId) {
     const selectedProject = projectsList.filter(project => project.id == projectId)[0]
     imagesContent = document.querySelector('.images-content')
+    imagesCarousel = document.querySelector('.images-carousel')
     imagesContent.innerHTML = ''
-    imagesContent.innerHTML += selectedProject.images.map((imageSrc, index) => `<img src="${imageSrc}" class="">`)
+    imagesContent.innerHTML += selectedProject.images.map((imageSrc, index) => `<img class="justify-self-center ${'project-'+projectId+ '-' +index}" src="${imageSrc}" />`)
+    setTimeout(() => {
+        selectedProject.images.map((imageSrc, index) => {
+            image = imagesContent.querySelector('.'+ 'project-'+projectId+ '-' +index)
+            console.log(image);
+            image.style.paddingLeft = (imagesCarousel.offsetWidth - image.offsetWidth) / 2 + 'px'
+        })
+        
+    }, 50)
 }
 
 async function viewImage (projectId) {

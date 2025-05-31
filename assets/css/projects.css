@@ -215,7 +215,7 @@
     width: auto;
     place-self: center;
     max-height: 80vw;
-    max-width: 80vw;
+    /* max-width: 80vw; */
 }
 
 .images-content {
