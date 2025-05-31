@@ -221,11 +221,10 @@ function SetAllImages (projectId) {
     setTimeout(() => {
         selectedProject.images.map((imageSrc, index) => {
             image = imagesContent.querySelector('.'+ 'project-'+projectId+ '-' +index)
-            console.log(image);
             image.style.paddingLeft = (imagesCarousel.offsetWidth - image.offsetWidth) / 2 + 'px'
         })
         
-    }, 50)
+    }, 100)
 }
 
 async function viewImage (projectId) {
