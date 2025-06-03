@@ -161,6 +161,26 @@ class Project {
 const projectsList = [
     {
         id: "1",
+        title: "Chess Online",
+        description: 'This is a place where you can play the classic online chess game that, just sharing a link, can challenge a friend. The site has a chat, a history of movements and a pleasant design with a good server built with bun technology which offers a very fast response and a unique experience.',
+        technologies: ['Bun', 'NextJS', 'MongoDB', 'Socket-io'],
+        github: 'https://github.com/dogakobo/chess_app.git',
+        images: ['./assets/img/project-4-1.png', './assets/img/project-4-2.png', './assets/img/project-4-3.png', './assets/img/project-4-4.png'],
+        link: 'http://chess-online.quevedodev.site/',
+        cover: './assets/img/project-4-1.png'
+    },
+    {
+        id: "2",
+        title: "Fortnite Api Consume",
+        description: 'This site compiles a large Fortnite database with information, items, users, season information, etc. Check out all the new Fortnite features every day. You can also create an account and add the items you have and then share your profile with your friends',
+        technologies: ['React', 'MongoDB', 'ExpressJS', 'Tailwind CSS', 'Api consume'],
+        github: '',
+        images: ['./assets/img/project-2-1.png', './assets/img/project-2-2.png', './assets/img/project-2-3.png'],
+        link: 'https://fortnite-items-c725fe1f0eaf.herokuapp.com/',
+        cover: './assets/img/project-2-1.png'
+    },
+    {
+        id: "3",
         title: "Pathys's Esthetic Web Site",
         description: 'An esthetic website. This has a catalog with search options and shopping cart with PayPal. On the side of the administrator, we have a dashboard with sales, users and last orders graphics. In addition to its respective product inventory system.',
         technologies: ['Angular', 'MongoDB', 'ExpressJS', 'Material UI'],
@@ -170,17 +190,7 @@ const projectsList = [
         cover: './assets/img/project-1-1.PNG'
     },
     {
-        id: "2",
-        title: "Fortnite Api Consume",
-        description: 'This site compiles a large Fortnite database with information, items, users, season information, etc. Check out all the new Fortnite features every day. You can also create an account and add the items you have and then share your profile with your friends',
-        technologies: ['React', 'MongoDB', 'ExpressJS', 'Tailwind CSS', 'Api consume'],
-        github: '',
-        images: ['./assets/img/project-2-1.png', './assets/img/project-2-2.png', './assets/img/project-2-3.png'],
-        link: 'https://fortnite-items.onrender.com/',
-        cover: './assets/img/project-2-1.png'
-    },
-    {
-        id: "3",
+        id: "4",
         title: "Vue Photos App",
         description: 'A simple image web application where you can browse and view many amazing images including high definition images that you can use as wallpaper.',
         technologies: ['VueJS', 'Tailwind CSS', 'Api consume'],
@@ -189,6 +199,7 @@ const projectsList = [
         link: 'https://vue-photos-app.onrender.com/',
         cover: './assets/img/project-3-1.png'
     }
+
 ]
 
 const projects = document.querySelector('#projects')
