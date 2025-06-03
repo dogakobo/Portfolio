@@ -162,7 +162,7 @@ const projectsList = [
     {
         id: "1",
         title: "Chess Online",
-        description: 'This is a place where you can play the classic online chess game that, just sharing a link, can challenge a friend. The site has a chat, a history of movements and a pleasant design with a good server built with bun technology which offers a very fast response and a unique experience.',
+        description: 'This is a site where you can play the classic online chess game that, just sharing a link, can challenge a friend. The site has a chat, a history of movements and a pleasant design with a good server built with bun technology which offers a very fast response and a unique experience.',
         technologies: ['Bun', 'NextJS', 'MongoDB', 'Socket-io'],
         github: 'https://github.com/dogakobo/chess_app.git',
         images: ['./assets/img/project-4-1.png', './assets/img/project-4-2.png', './assets/img/project-4-3.png', './assets/img/project-4-4.png'],
