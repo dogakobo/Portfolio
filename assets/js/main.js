@@ -161,16 +161,6 @@ class Project {
 const projectsList = [
     {
         id: "1",
-        title: "Chess Online",
-        description: 'This is a site where you can play the classic online chess game that, just sharing a link, can challenge a friend. The site has a chat, a history of movements and a pleasant design with a good server built with bun technology which offers a very fast response and a unique experience.',
-        technologies: ['Bun', 'NextJS', 'MongoDB', 'Socket-io'],
-        github: 'https://github.com/dogakobo/chess_app.git',
-        images: ['./assets/img/project-4-1.png', './assets/img/project-4-2.png', './assets/img/project-4-3.png', './assets/img/project-4-4.png'],
-        link: 'http://chess-online.quevedodev.site/',
-        cover: './assets/img/project-4-1.png'
-    },
-    {
-        id: "2",
         title: "Fortnite Api Consume",
         description: 'This site compiles a large Fortnite database with information, items, users, season information, etc. Check out all the new Fortnite features every day. You can also create an account and add the items you have and then share your profile with your friends',
         technologies: ['React', 'MongoDB', 'ExpressJS', 'Tailwind CSS', 'Api consume'],
@@ -180,12 +170,22 @@ const projectsList = [
         cover: './assets/img/project-2-1.png'
     },
     {
+        id: "2",
+        title: "Chess Online",
+        description: 'This is a site where you can play the classic online chess game that, just sharing a link, can challenge a friend. The site has a chat, a history of movements and a pleasant design with a good server built with bun technology which offers a very fast response and a unique experience.',
+        technologies: ['Bun', 'NextJS', 'MongoDB', 'Socket-io'],
+        github: 'https://github.com/dogakobo/chess_app.git',
+        images: ['./assets/img/project-4-1.png', './assets/img/project-4-2.png', './assets/img/project-4-3.png', './assets/img/project-4-4.png'],
+        link: 'http://chess-online.quevedodev.site/',
+        cover: './assets/img/project-4-1.png'
+    },
+    {
         id: "3",
         title: "Pathys's Esthetic Web Site",
         description: 'An esthetic website. This has a catalog with search options and shopping cart with PayPal. On the side of the administrator, we have a dashboard with sales, users and last orders graphics. In addition to its respective product inventory system.',
         technologies: ['Angular', 'MongoDB', 'ExpressJS', 'Material UI'],
         github: 'https://github.com/dogakobo/estetica_website',
-        link: '',
+        link: 'https://estetica-website.onrender.com/',
         images: ['./assets/img/project-1-1.PNG', './assets/img/project-1-2.PNG', './assets/img/project-1-3.PNG', './assets/img/project-1-4.PNG', './assets/img/project-1-5.PNG', './assets/img/project-1-6.PNG', './assets/img/project-1-7.PNG', './assets/img/project-1-8.PNG', ],
         cover: './assets/img/project-1-1.PNG'
     },
